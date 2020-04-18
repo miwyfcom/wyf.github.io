@@ -1,0 +1,424 @@
+﻿@charset "utf-8";
+/*-------------------------全局属性--------------------------*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, code, em, img, q, small, strong, dd, dl, dt, li, ol, ul, fieldset, form, label, table, tbody, tr, th, td, input 
+{margin:0;padding:0;}
+body{width:100%;font-size:12px;font-family:微软雅黑,宋体,Arial, Helvetica, sans-serif, simsun;}
+a, a:link, a:visited{text-decoration:none;color:#333;}
+li{list-style:none;}
+img{border:none;}
+.clear{clear:both;}
+.am-topbar{border:0;}
+.cw1300{max-width:1300px;margin:0 auto;position:relative;}
+.am-topbar-collapse.am-in {
+   overflow-y: visible;
+}
+
+/*------版头占位------*/
+.hd_block{height:50px;}
+/*------版头------*/
+#header{padding:30px 0;background:white;border-bottom: solid 1px #eeeeee;}
+#header .am-container{max-width:1300px;}
+#header .am-nav{margin-left:5%;}
+#header .am-nav li{height:50px;line-height:50px;}
+#header .am-nav a{font-size:20px;display:block;height:50px;line-height:50px;text-align:center;font-family:微软雅黑;color:#333;-moz-border-radius:35px;-webkit-border-radius:35px;border-radius:35px;background:0;}
+#header .am-nav a:hover{color:#467df5;}
+#header .am-icon-bars{color:white;}
+#header .am-nav>li>a{padding:0;display:block;padding:0 40px;}
+#header .am-topbar-nav>li>a:after{border:0;}
+#header .am-nav a.cur{background:#467df5;color:white;}
+#header .logo_phone{display:none;}
+
+
+/*----版头右侧菜单----*/
+
+#header .menuDiv {float:right;line-height:50px;}
+/* 设置ul和li的样式 */
+#header .menuDiv li {float: left;} 
+/* 设置二级菜单绝对定位，并隐藏 */
+#header .menuDiv > ul > li{position: relative;}
+#header .menuDiv > ul > li > ul {
+	position:absolute;
+	display:none;
+	top:35px;
+	left:-50%;
+	margin-left:25px;
+	border-radius:5px; 
+  	box-shadow:0 0 30px 8px rgba(0,0,0,0.1);
+  	overflow:hidden;
+}
+/* 设置二级菜单的li的样式 */
+#header .menuDiv > ul > li > ul > li{float: none;}
+/* 鼠标放在一级菜单上，显示二级菜单 */
+#header .menuDiv > ul > li:hover ul{display: block;}
+/* 一级菜单 */
+#header .menuDiv > ul > li > a {display: block;margin-left:30px;}
+#header .menuDiv > ul > li > a span{display: none;}
+/* 二级菜单 */
+#header .menuDiv > ul > li > ul > li > a {
+	padding:0 30px;
+	line-height:40px;
+	color:#333;
+	background:white;
+	text-align:center;
+	display:block;
+	border-bottom:1px solid #eee;
+}
+#header .menuDiv > ul > li > ul > li > a:hover{background:#467df5;color:white;font-weight:bold;}
+
+
+
+/*--手机导航按钮颜色-*/
+.am-btn-secondary {color: #fff;background-color: #467df5;border-color: #467df5;}
+.am-btn-secondary:focus, .am-btn-secondary:hover{background-color: #467df5;}
+.am-btn-secondary.am-active, .am-btn-secondary:active, .am-btn-secondary:focus, .am-btn-secondary:hover, .am-dropdown.am-active .am-btn-secondary.am-dropdown-toggle{color:#fff;border-color:#467df5;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -- 内容 -- */
+.box{padding:10% 0;}
+.box .button{margin-top:10%;}
+.box1 .a1,
+.box2 .a2,
+.box3 .a3,
+.box4 .a4,
+.box6 .a6,
+.box7 .a7{max-width:100%;}
+
+/* -- 第1屏 -- */
+.box1 .con{float:left;margin-left:3%;}
+
+.box1 .b1{float:right;max-width:60%;}
+
+/* -- 第2屏 -- */
+.box2{background:#f8f8f8;}
+.box2 .con{float:right;margin-left:5%;}
+.box2 .b2{float:left;max-width:55%;}
+
+/* -- 第3屏 -- */
+.box3 .con{position:absolute;left:0;margin-left:3%;}
+.box3 label{height:30px;width:100%;display: block;}
+.box3 .b3{max-width:100%;float:right;margin-right:-5%;}
+
+/* -- 第4屏 -- */
+.box4{background:#f8f8f8;}
+.box4 .con{float:left;margin-left:3%;}
+.box4 .b4{float:right;max-width:50%;}
+
+/* -- 第5屏 -- */
+.box5{text-align:center;}
+.box5 .b5{max-width:100%;}
+
+/* -- 第6屏 -- */
+.box6{background:#f8f8f8;}
+.box6 .con{float:left;margin-left:3%;}
+.box6 .b6{max-width:50%;position:absolute;right:0;top:20%;}
+
+/* -- 第5屏 -- */
+.box7{text-align:center;}
+.box7 ul{margin-top:5%;}
+.box7 li{display:inline-block;margin:0 50px;}
+
+
+
+
+/*------联系------*/
+#contact{padding:5% 0;background:url(../images/ct_bg.jpg) no-repeat top center;background-size:cover;}
+#contact .am-container{max-width:1300px;}
+#contact .section-title{padding:2% 0;}
+#contact .section-title h2{font-size:100px;font-weight:bold;padding-left:1%;line-height:100px;color:white;}
+#contact .section-title p{margin:0;color:#000;font-size:19px;padding-left:2%;color:white;}
+
+
+#contact .info{}
+#contact .info li{padding:10px;}
+#contact .info li .box{position: relative; height:210px;padding: 80px 0 0 110px; border: 1px solid rgba(255, 255, 255, 0.14);}
+#contact .info li img{position: absolute;display: inline-block;top: 20px;left: 20px;font-size: 40px;}
+#contact .info li h5{margin: 0 0 12px 0;padding-bottom: 7px;border-bottom: 1px solid #fff;color:white;font-size: 30px;line-height: 1em;font-weight: 700;}
+#contact .info li p{margin:0;font-size:14px;line-height:21px;color:white;}
+#contact .srt{margin-bottom:3%;}
+#contact .srt a{margin-left:1%;}
+#contact .srt .am-icon-btn{width: 60px;height: 60px;font-size: 28px;line-height: 60px;}
+	
+	
+/* === 7. START CONTACT FORM === */
+.contact-form .input-group {
+	position: relative;
+	padding-top: 15px;
+	margin-bottom: 40px;
+}
+.contact-form .input-group label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #b7b7b7;
+	font-size: 14px;
+	font-weight: 300;
+} 
+.contact-form input:not([type='submit']),
+.contact-form textarea {
+	width: 100%;
+	color: #467df5;
+	font-size: 12px;
+	font-weight: 300;
+	background: transparent;
+	padding: 12px 15px 12px 0;
+	border:0;
+	border-bottom: 3px solid #efeded;
+}
+.contact-form input:not([type='submit']):focus,
+.contact-form textarea:focus {
+	outline: none;
+}
+.contact-form .input-group input.has-value ~ label,
+.contact-form .input-group textarea.has-value ~ label,
+.contact-form .input-group input:focus ~ label,
+.contact-form .input-group textarea:focus ~ label {
+	color: #467df5;
+}
+.contact-form .input-group input.has-value,
+.contact-form .input-group textarea.has-value,
+.contact-form .input-group input:focus,
+.contact-form .input-group textarea:focus {
+	border-color: #467df5;
+}
+.contact-form input[type='submit'] {
+	color: #e7e7e7;
+	margin-top: 10px;
+	outline: none;
+	font-size: 15px;
+	font-weight: 900;
+	line-height: 1em;
+	text-transform: uppercase;
+	padding: 16px 18px;
+	border: 0;
+	background: #1f1e1d;
+}
+.contact-form input[type='submit']:hover,
+.contact-form input[type='submit']:active {
+	color: #fff;
+	outline: none;
+	background: #467df5;
+}
+
+
+@media only screen and (max-width: 1300px)
+{
+
+	#header {
+    	padding: 20px 0;
+	}
+	/*------内容------*/
+	.box{padding:10% 5%;}
+	.box .con{margin:0;}
+	/*------内容1------*/
+	.box1 .con{max-width:50%;margin:0;}
+	.box1 .b1{max-width:50%;}
+	/*------内容2------*/
+	.box2 .con{max-width:50%;margin:0;}
+	.box2 .b2{max-width:50%;}
+	/*------内容3------*/
+	.box3 .con{max-width:50%;margin:0;position:inherit;float:left;}
+	.box3 .b3{max-width:50%;margin:0;}
+	/*------内容4------*/
+	.box4 .con{max-width:50%;float:left;}
+	.box4 .b4{max-width:50%;}
+	/*------内容6------*/
+	.box6 .con{max-width:70%;float:left;}
+	.box6 .b6{max-width:50%;}
+
+}
+@media only screen and (max-width: 640px)
+{
+
+
+	
+	.box .con{float:none;}
+	.box .button{text-align: center;}
+	.box .button .more img{max-width:35%;}
+	.box .button .download img{max-width:55%;}
+	/*------内容1------*/
+	
+	.box1 .a1 {
+	    max-width: 80%;
+	    margin-top: 5%;
+	}
+	.box1 .b1 {
+	    float: none;
+	    max-width: 100%;
+	    margin-right: 5%;
+	}
+	/*------内容2------*/
+
+	.box2 .a2 {
+	    margin-top: 5%;
+	}
+	.box2 .b2 {
+	    float: none;
+	    max-width: 100%;
+	    margin-right: 5%;
+	}
+	/*------内容3------*/
+
+	.box3 .a3 {
+	    max-width: 70%;
+	    margin-top: 5%;
+	}
+	.box3 .b3 {
+	    float: none;
+	    max-width: 100%;
+	    margin-right: 5%;
+	}
+	.box3 .con {
+		position: inherit;
+	}
+	/*------内容4------*/
+
+	.box4 .a4 {
+	    max-width: 90%;
+	    margin-top: 5%;
+	}
+	.box4 .b4 {
+	    float: none;
+	    max-width: 100%;
+	    margin-right: 5%;
+	}
+	/*------内容6------*/
+	
+	.box6 .a6 {
+	    margin-top: 5%;
+	}
+	.box6 .b6 {
+	    position: inherit;
+	    max-width: 100%;
+	    margin-left: 0%;
+	}
+	/*------内容7------*/
+
+
+	.box7 .a7 {
+	    max-width: 80%;
+	}
+	.box7 li{display:inline;}
+	.box7 li img{max-width:35%;}
+}
+
+
+
+@media only screen and (max-width: 1440px)
+{
+	/*------联系------*/
+	#contact .section-title{padding:2% 0;}
+	#contact .section-title h2{font-size:80px;padding-left:1%;line-height:80px;}
+	#contact .section-title p br{display:none;}
+}
+
+@media only screen and (max-width: 640px)
+{
+	.e_img{max-width:80%;}
+	.pd_top{padding-top:60px;}
+	/*------版头------*/
+	#header{padding:8px 0;}
+	#header .am-topbar-brand{height:40px;padding-top:5px;}
+	#header .am-topbar-brand img{height:30px;}
+	.am-topbar-brand{margin-right:0;}
+	#header .am-nav{margin-left:0;margin-bottom:0;}
+	#header .am-nav li{line-height:40px;border-bottom:1px solid #ddd;}
+	#header .am-nav a{height: 40px;line-height: 40px;}
+	#header .am-nav a.cur{background:#467df5;color:white;}
+	#header .am-topbar-btn{margin-top: 5px;}
+	#header .logo_pc{display: none;}
+	#header .logo_phone{display: block;}
+
+
+
+
+/*----版头右侧菜单----*/
+#header .menuDiv {float:none;line-height:50px;}
+/* 设置ul和li的样式 */
+#header .menuDiv li {float: none;} 
+
+/* 设置二级菜单绝对定位，并隐藏 */
+#header .menuDiv > ul > li{position: relative;}
+#header .menuDiv > ul > li > ul {
+	position:inherit;
+	display:block;
+	margin-left:0;
+	border-radius:0; 
+  	box-shadow:0 0 0 0 rgba(0,0,0,0.1);
+  	overflow:hidden;
+    left:0;
+    top:0;
+    margin:0;
+}
+
+
+
+/* 一级菜单 */ 
+#header .menuDiv > ul > li > a{margin-left:0;text-align: center;font-size:20px;}
+#header .menuDiv > ul > li > a:hover{color:#467df5;}
+#header .menuDiv > ul > li > a.store{display:none;}
+#header .menuDiv > ul > li > a.login img{display:none;}
+#header .menuDiv > ul > li > a.login span{display:block;}
+/* 二级菜单 */
+#header .menuDiv > ul > li > ul > li > a {
+	padding:0 30px;
+	color:#333;
+	background:white;
+	text-align:center;
+	display:block;
+	border-bottom:1px solid #ddd;
+	font-size:20px;
+	line-height:50px;
+}
+#header .menuDiv > ul > li > ul > li > a:hover{background:none;color:#467df5;font-weight:400;}
+
+
+
+
+
+
+
+
+	/*------联系------*/
+	#contact{padding-top:60px;}
+	#contact .section-title{padding:4% 0;}
+	#contact .section-title h2 {font-size:30px;padding-left:1%;line-height:30px;}
+	#contact .section-title p{margin: 0;font-size: 14px;padding-left:2%;}
+	#contact .info{padding:0;}
+	#contact .info li {padding: 5px;}
+	#contact .info li .box{padding:30px 0 0 10px;height: 80px;}
+	#contact .info li img{position:absolute;display:inline-block;top:10px;left:10px;height:20%;}
+	.mail_ico{height:12%;}
+	#contact .info li h5{margin:0;padding-bottom:2px;border-bottom:1px solid #fff;color:white;font-size:16px;line-height:18px;}
+	#contact .info li p{margin:0;font-size:12px;}
+	#contact .srt{display:none;}
+	#contact .table{margin-top:5%;}
+	#contact .row{margin-left:-15px;margin-right:-15px;}
+	.contact-form .input-group{position:relative;padding-top:15px;margin-bottom:15px;}
+	.contact-form input:not([type='submit']), .contact-form textarea{font-size: 12px;padding:0;line-height:14px;}
+	.contact-form .input-group label{font-size: 12px;}
+	.contact-form input[type='submit'] {width:100%;margin-top: 10px;font-size: 15px;line-height: 1em;padding: 16px 18px;}
+}
+
+
+
+
